@@ -1,0 +1,63 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+wp-config.php
+wp-config-local.php
+
+# Local WordPress restore/output directories
+/wp/
+/.restore/
+/.restore-*/
+/restore/
+/restored/
+/tmp/
+/temp/
+
+# Database dumps outside the intentionally tracked .wpress export
+*.sql
+*.sql.gz
+*.mysql
+*.dump
+*.bak
+
+# WordPress generated/runtime content
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup*/
+wp-content/backups/
+wp-content/ai1wm-backups/
+wp-content/updraft/
+wp-content/wflogs/
+wp-content/debug.log
+debug.log
+*.log
+
+# Dependency and build output
+node_modules/
+vendor/
+dist/
+build/
+.cache/
+
+# Archives and local backups
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# DDEV local runtime state
+.ddev/.global_commands/
+.ddev/.homeadditions/
+.ddev/.downloads/
+.ddev/.importdb*
+.ddev/*.generated.*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
