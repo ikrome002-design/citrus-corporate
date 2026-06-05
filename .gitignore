@@ -1,0 +1,56 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+wp-config.php
+citrus/wp-config.php
+
+# WordPress generated or environment-specific content
+wp-content/uploads/
+citrus/wp-content/uploads/
+wp-content/cache/
+citrus/wp-content/cache/
+wp-content/upgrade/
+citrus/wp-content/upgrade/
+wp-content/backup*/
+citrus/wp-content/backup*/
+wp-content/backups/
+citrus/wp-content/backups/
+wp-content/ai1wm-backups/
+citrus/wp-content/ai1wm-backups/
+wp-content/updraft/
+citrus/wp-content/updraft/
+wp-content/wflogs/
+citrus/wp-content/wflogs/
+wp-content/debug.log
+citrus/wp-content/debug.log
+debug.log
+
+# Logs, dumps, backups, and packaged exports
+*.log
+error_log
+*.sql
+*.sql.gz
+*.zip
+*.tar
+*.tar.gz
+
+# Local dependencies and build outputs
+node_modules/
+/vendor/
+/dist/
+/build/
+
+# Editor, OS, and machine-local files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sql
+*.log
+error_log
+**/error_log
+.env
+.env.*
+wp-config.php
+citrus/wp-config.php

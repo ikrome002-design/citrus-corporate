@@ -1,0 +1,597 @@
+{
+  "observerUrl": "./preview/dist/social-icons-observer.js",
+  "settings": {
+    "tabs": [
+      {
+        "id": "source",
+        "name": "Source",
+        "active": true
+      },
+      {
+        "id": "layout",
+        "name": "Layout"
+      },
+      {
+        "id": "style",
+        "name": "Style"
+      }
+    ],
+    "properties": [
+      {
+        "id": "items",
+        "name": "Icons",
+        "tab": "source",
+        "type": "complex",
+        "complex": {
+          "properties": [
+            {
+              "id": "url",
+              "name": "Add URL to a social profile",
+              "type": "text",
+              "defaultValue": "",
+              "description": "Enter the target page URL here. Clicking on an icon will open this page in a new browser tab."
+            },
+            {
+              "id": "type",
+              "name": "Icon",
+              "type": "select",
+              "select": {
+                "options": [
+                  {
+                    "value": "custom",
+                    "name": "Custom"
+                  },
+                  {
+                    "value": "500px",
+                    "name": "500px"
+                  },
+                  {
+                    "value": "badoo",
+                    "name": "Badoo"
+                  },
+                  {
+                    "value": "behance",
+                    "name": "Behance"
+                  },
+                  {
+                    "value": "blogger",
+                    "name": "Blogger"
+                  },
+                  {
+                    "value": "delicious",
+                    "name": "Delicious"
+                  },
+                  {
+                    "value": "deviantart",
+                    "name": "Deviantart"
+                  },
+                  {
+                    "value": "digg",
+                    "name": "Digg"
+                  },
+                  {
+                    "value": "disqus",
+                    "name": "Disqus"
+                  },
+                  {
+                    "value": "dribbble",
+                    "name": "Dribbble"
+                  },
+                  {
+                    "value": "envato",
+                    "name": "Envato"
+                  },
+                  {
+                    "value": "evernote",
+                    "name": "Evernote"
+                  },
+                  {
+                    "value": "facebook",
+                    "name": "Facebook"
+                  },
+                  {
+                    "value": "fb-messenger",
+                    "name": "Facebook Messenger"
+                  },
+                  {
+                    "value": "flickr",
+                    "name": "Flickr"
+                  },
+                  {
+                    "value": "flipboard",
+                    "name": "Flipboard"
+                  },
+                  {
+                    "value": "forrst",
+                    "name": "Forrst"
+                  },
+                  {
+                    "value": "foursquare",
+                    "name": "Foursquare"
+                  },
+                  {
+                    "value": "github",
+                    "name": "Github"
+                  },
+                  {
+                    "value": "google-plus",
+                    "name": "Google Plus"
+                  },
+                  {
+                    "value": "instagram",
+                    "name": "Instagram"
+                  },
+                  {
+                    "value": "lastfm",
+                    "name": "Last.fm"
+                  },
+                  {
+                    "value": "line",
+                    "name": "Line"
+                  },
+                  {
+                    "value": "lineAt",
+                    "name": "Line@"
+                  },
+                  {
+                    "value": "linkedin",
+                    "name": "LinkedIn"
+                  },
+                  {
+                    "value": "livejournal",
+                    "name": "LiveJournal"
+                  },
+                  {
+                    "value": "email",
+                    "name": "Email"
+                  },
+                  {
+                    "value": "myspace",
+                    "name": "Myspace"
+                  },
+                  {
+                    "value": "odnoklassniki",
+                    "name": "Odnoklassniki"
+                  },
+                  {
+                    "value": "periscope",
+                    "name": "Periscope"
+                  },
+                  {
+                    "value": "pinterest",
+                    "name": "Pinterest"
+                  },
+                  {
+                    "value": "print",
+                    "name": "Print"
+                  },
+                  {
+                    "value": "reddit",
+                    "name": "Reddit"
+                  },
+                  {
+                    "value": "rss",
+                    "name": "RSS"
+                  },
+                  {
+                    "value": "sina-weibo",
+                    "name": "Sina Weibo"
+                  },
+                  {
+                    "value": "skype",
+                    "name": "Skype"
+                  },
+                  {
+                    "value": "slack",
+                    "name": "Slack"
+                  },
+                  {
+                    "value": "snapchat",
+                    "name": "Snapchat"
+                  },
+                  {
+                    "value": "soundcloud",
+                    "name": "SoundCloud"
+                  },
+                  {
+                    "value": "spotify",
+                    "name": "Spotify"
+                  },
+                  {
+                    "value": "stackoverflow",
+                    "name": "Stack Overflow"
+                  },
+                  {
+                    "value": "stumbleupon",
+                    "name": "StumbleUpon"
+                  },
+                  {
+                    "value": "telegram",
+                    "name": "Telegram"
+                  },
+                  {
+                    "value": "tumblr",
+                    "name": "Tumblr"
+                  },
+                  {
+                    "value": "twitter",
+                    "name": "Twitter"
+                  },
+                  {
+                    "value": "viadeo",
+                    "name": "Viadeo"
+                  },
+                  {
+                    "value": "viber",
+                    "name": "Viber"
+                  },
+                  {
+                    "value": "vimeo",
+                    "name": "Vimeo"
+                  },
+                  {
+                    "value": "vine",
+                    "name": "Vine"
+                  },
+                  {
+                    "value": "vk",
+                    "name": "Vk"
+                  },
+                  {
+                    "value": "whatsapp",
+                    "name": "WhatsApp"
+                  },
+                  {
+                    "value": "xing",
+                    "name": "Xing"
+                  },
+                  {
+                    "value": "youtube",
+                    "name": "YouTube"
+                  }
+                ]
+              },
+              "defaultValue": "",
+              "description": "Choose the icon to display from the list. If you can't find the icon you're looking for, email us at apps@elfsight.com"
+            },
+            {
+              "id": "iconUrl",
+              "name": "Custom icon url (up to 60x60 px, png)",
+              "type": "file",
+              "defaultValue": "",
+              "visible": false,
+              "description": "Set your custom icon URL. Size: up to 60x60 px, corresponding your icons size. Format: PNG. You can upload it to any server or file manager to make it publicly available."
+            }
+          ]
+        },
+        "allowEmpty": true,
+        "defaultValue": [
+          {
+            "type": "facebook",
+            "url": "https://www.facebook.com/elfsight"
+          },
+          {
+            "type": "twitter",
+            "url": "https://twitter.com/elfsight"
+          },
+          {
+            "type": "instagram",
+            "url": "https://www.instagram.com/elfsight/"
+          },
+          {
+            "type": "email",
+            "url": "mailto:hello@elfsight.com"
+          }
+        ],
+        "description": "Select the social icons you want to display on your webpage. If you can't find the icon you're looking for, email us at apps@elfsight.com"
+      },
+      {
+        "id": "size",
+        "name": "Icon size",
+        "tab": "layout",
+        "type": "select-inline",
+        "selectInline": {
+          "options": [
+            {
+              "value": "24",
+              "name": "24px"
+            },
+            {
+              "value": "32",
+              "name": "32px"
+            },
+            {
+              "value": "40",
+              "name": "40px"
+            },
+            {
+              "value": "48",
+              "name": "48px"
+            },
+            {
+              "value": "60",
+              "name": "60px"
+            }
+          ]
+        },
+        "defaultValue": "32",
+        "description": "Select icon size from the list."
+      },
+      {
+        "id": "location",
+        "name": "Location",
+        "tab": "layout",
+        "type": "select-inline",
+        "selectInline": {
+          "options": [
+            {
+              "value": "inline",
+              "name": "Inline"
+            },
+            {
+              "value": "floating",
+              "name": "Floating"
+            }
+          ]
+        },
+        "defaultValue": "inline",
+        "description": "Set the location option: choose inline or floating buttons. Inline buttons are displayed right where you placed the widget. Floating buttons are fixed in a specific position of your browser window and stay there as a user scrolls down the page."
+      },
+      {
+        "id": "position",
+        "name": "Position",
+        "tab": "layout",
+        "type": "select-inline",
+        "selectInline": {
+          "options": [
+            {
+              "value": "left",
+              "name": "Left"
+            },
+            {
+              "value": "center",
+              "name": "Center"
+            },
+            {
+              "value": "right",
+              "name": "Right"
+            }
+          ]
+        },
+        "defaultValue": "center",
+        "description": "Align your icons. Choose one of the three options: left, center and right."
+      },
+      {
+        "id": "style",
+        "name": "Style",
+        "tab": "style",
+        "type": "select",
+        "select": {
+          "options": [
+            {
+              "value": "default",
+              "name": "Default"
+            },
+            {
+              "value": "material",
+              "name": "Material"
+            },
+            {
+              "value": "flat",
+              "name": "Flat"
+            },
+            {
+              "value": "classic",
+              "name": "Classic"
+            },
+            {
+              "value": "bordered",
+              "name": "Bordered"
+            },
+            {
+              "value": "symbol",
+              "name": "Symbol"
+            }
+          ]
+        },
+        "defaultValue": "default",
+        "description": "Select the appropriate icon look from the list."
+      },
+      {
+        "id": "colorsSubgroup",
+        "name": "Colors",
+        "tab": "style",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "iconColor",
+              "name": "Icon color",
+              "tab": "style",
+              "type": "select-inline",
+              "selectInline": {
+                "options": [
+                  {
+                    "value": "native",
+                    "name": "Native"
+                  },
+                  {
+                    "value": "black",
+                    "name": "Black"
+                  },
+                  {
+                    "value": "white",
+                    "name": "White"
+                  }
+                ]
+              },
+              "defaultValue": "white",
+              "description": "Choose the color of the icon symbol. Three colors are available: native - is in icon brand color, you can also choose black or white."
+            },
+            {
+              "id": "bgColor",
+              "name": "Background color",
+              "tab": "style",
+              "type": "select-inline",
+              "selectInline": {
+                "options": [
+                  {
+                    "value": "native",
+                    "name": "Native"
+                  },
+                  {
+                    "value": "black",
+                    "name": "Black"
+                  },
+                  {
+                    "value": "white",
+                    "name": "White"
+                  }
+                ]
+              },
+              "defaultValue": "native",
+              "description": "Choose the icon background color. Three colors are available: native - is in icon brand color, you can also choose black or white. This option doesn't work with \"bordered\" and \"symbol\" styles."
+            },
+            {
+              "id": "iconColorOnHover",
+              "name": "Hover: icon color",
+              "tab": "style",
+              "type": "select-inline",
+              "selectInline": {
+                "options": [
+                  {
+                    "value": "native",
+                    "name": "Native"
+                  },
+                  {
+                    "value": "black",
+                    "name": "Black"
+                  },
+                  {
+                    "value": "white",
+                    "name": "White"
+                  }
+                ]
+              },
+              "defaultValue": "white",
+              "description": "Choose the icon symbol color on hover. The predefined options are the same as for the \"Icon color\" option."
+            },
+            {
+              "id": "bgColorOnHover",
+              "name": "Hover: background color",
+              "tab": "style",
+              "type": "select-inline",
+              "selectInline": {
+                "options": [
+                  {
+                    "value": "native",
+                    "name": "Native"
+                  },
+                  {
+                    "value": "black",
+                    "name": "Black"
+                  },
+                  {
+                    "value": "white",
+                    "name": "White"
+                  }
+                ]
+              },
+              "defaultValue": "native",
+              "description": "Choose the icon background color on hover. The predefined options are the same as for the \"Background color\" option."
+            }
+          ]
+        }
+      },
+      {
+        "id": "borderRadius",
+        "name": "Border radius",
+        "tab": "style",
+        "type": "select-inline",
+        "selectInline": {
+          "options": [
+            {
+              "value": "circle",
+              "name": "Circle"
+            },
+            {
+              "value": "rounded",
+              "name": "Rounded"
+            },
+            {
+              "value": "square",
+              "name": "Square"
+            }
+          ]
+        },
+        "defaultValue": "circle",
+        "description": "Choose your border radius - circle, rounded, square."
+      },
+      {
+        "id": "animation",
+        "name": "Animation",
+        "tab": "style",
+        "type": "select",
+        "select": {
+          "options": [
+            {
+              "value": "none",
+              "name": "None"
+            },
+            {
+              "value": "bounce",
+              "name": "Bounce"
+            },
+            {
+              "value": "fly",
+              "name": "Fly"
+            },
+            {
+              "value": "rotate",
+              "name": "Rotate"
+            },
+            {
+              "value": "slide",
+              "name": "Slide"
+            },
+            {
+              "value": "zoom",
+              "name": "Zoom"
+            }
+          ]
+        },
+        "defaultValue": "bounce",
+        "description": "Choose one of the animation styles to play on hover."
+      },
+      {
+        "id": "transparencySubgroup",
+        "name": "Opacity",
+        "tab": "style",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "transparency",
+              "name": "Opacity, %",
+              "tab": "style",
+              "type": "number",
+              "defaultValue": 100,
+              "description": "Set the icon opacity percentage. Use this option to make the icons fit your website`s design."
+            },
+            {
+              "id": "transparencyOnHover",
+              "name": "Opacity on hover, %",
+              "tab": "style",
+              "type": "number",
+              "defaultValue": 100,
+              "description": "Set the icon opacity percentage on hover. Use this option to make the icons fit your website`s design."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "preferences": {
+    "previewUpdateTimeout": 0
+  }
+}
