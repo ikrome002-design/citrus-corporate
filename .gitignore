@@ -1,30 +1,494 @@
-/vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
+# ============================================================
+# Citrus Labs Limited Corporate Website - .gitignore
+# ============================================================
+# Purpose:
+# Keep the GitHub repository clean, secure, lightweight, and
+# free from local environment files, dependencies, build output,
+# cache files, logs, credentials, database dumps, and generated assets.
+# ============================================================
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
 
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
+# ============================================================
+# 1. ENVIRONMENT & SECRET CONFIGURATION FILES
+# ============================================================
 
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
-
-storage/*.key
 .env
-Homestead.yaml
-Homestead.json
-/.vagrant
+.env.*
+!.env.example
+!.env.testing.example
+!.env.local.example
+
+*.env
+*.local
+*.secret
+*.secrets
+*.credentials
+*.key
+*.pem
+*.crt
+*.cer
+*.p12
+*.pfx
+
+auth.json
+oauth-private.key
+oauth-public.key
+jwt-private.key
+jwt-public.key
+
+# Local configuration files that may contain machine-specific values
+config/local.php
+config/*.local.php
+config/*-local.php
+
+
+# ============================================================
+# 2. PHP / LARAVEL DEPENDENCIES
+# ============================================================
+
+/vendor/
+
+# Composer cache or temporary files
+composer.phar
 .phpunit.result.cache
 
-/public/build
-/storage/pail
-.env.backup
-.env.production
-.phpactor.json
-auth.json
+# Do NOT ignore composer.lock for this corporate website.
+# It should be committed for reproducible application installs.
+
+
+# ============================================================
+# 3. LARAVEL APPLICATION GENERATED FILES
+# ============================================================
+
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
+
+/storage/*.key
+/storage/logs/*
+!/storage/logs/.gitignore
+
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+
+/storage/framework/cache/data/*
+!/storage/framework/cache/data/.gitignore
+
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+
+/storage/framework/testing/*
+!/storage/framework/testing/.gitignore
+
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+
+/storage/app/private/*
+!/storage/app/private/.gitignore
+
+/storage/app/public/*
+!/storage/app/public/.gitignore
+
+# User uploads, media, generated documents, and runtime files
+/public/uploads/
+/public/storage/
+/public/media/
+/public/files/
+/public/documents/
+/public/downloads/
+/public/exports/
+/public/imports/
+
+
+# ============================================================
+# 4. NODE / JAVASCRIPT / TYPESCRIPT DEPENDENCIES
+# ============================================================
+
+node_modules/
+.npm/
+.yarn/
+.pnpm-store/
+
+# Node package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime files
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# TypeScript incremental build cache
+*.tsbuildinfo
+
+# Do NOT ignore package-lock.json, yarn.lock, or pnpm-lock.yaml.
+# Lock files should be committed for reproducible builds.
+
+
+# ============================================================
+# 5. FRONTEND BUILD OUTPUT
+# ============================================================
+
+/dist/
+/build/
+/out/
+/.next/
+/nuxt/
+/.output/
+/.vercel/
+/.netlify/
+
+# Laravel Vite output
+/public/build/
+/public/hot
+
+# Vite cache
+node_modules/.vite/
+.vite/
+
+# Storybook static output
+storybook-static/
+
+# Generated static assets
+/public/assets/generated/
+/public/assets/cache/
+/public/css/generated/
+/public/js/generated/
+
+
+# ============================================================
+# 6. CSS / TAILWIND / BOOTSTRAP GENERATED FILES
+# ============================================================
+
+# Generated CSS bundles
+/public/css/app.css
+/public/css/app.min.css
+/public/css/site.css
+/public/css/site.min.css
+
+# Generated JS bundles
+/public/js/app.js
+/public/js/app.min.js
+/public/js/site.js
+/public/js/site.min.js
+
+# Temporary Tailwind or PostCSS build files
+.tailwind-cache/
+.postcss-cache/
+
+
+# ============================================================
+# 7. DATABASE FILES, DUMPS & BACKUPS
+# ============================================================
+
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+/database/*.sqlite
+/database/*.sqlite3
+/database/*.db
+
+*.sql
+*.sql.gz
+*.dump
+*.backup
+*.bak
+
+/backups/
+/database/backups/
+/storage/backups/
+
+
+# ============================================================
+# 8. LOG FILES
+# ============================================================
+
+*.log
+logs/
+log/
+
+# Laravel logs are already covered above, but these catch extras
+/storage/debugbar/
+/storage/clockwork/
+
+
+# ============================================================
+# 9. CACHE FILES
+# ============================================================
+
+.cache/
+.cache-loader/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.sass-cache/
+.tmp/
+tmp/
+temp/
+.temp/
+
+# Framework/tool caches
+.php_cs.cache
+.php-cs-fixer.cache
+.pint.cache
+rector.php.cache
+
+
+# ============================================================
+# 10. TESTING & COVERAGE OUTPUT
+# ============================================================
+
+coverage/
+/coverage/
+/.nyc_output/
+
+tests/_output/
+tests/_support/_generated/
+
+junit.xml
+clover.xml
+coverage.xml
+test-results.xml
+
+/playwright-report/
+/test-results/
+/cypress/videos/
+/cypress/screenshots/
+
+
+# ============================================================
+# 11. DEBUGGING & PROFILING OUTPUT
+# ============================================================
+
+/debug/
+/debugbar/
+/clockwork/
+
+*.prof
+*.profile
+*.trace
+
+
+# ============================================================
+# 12. IDE & EDITOR FILES
+# ============================================================
+
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+
+*.sublime-project
+*.sublime-workspace
+
+.project
+.classpath
+.settings/
+
+*.swp
+*.swo
+*~
+.DS_Store
+
+
+# ============================================================
+# 13. OPERATING SYSTEM FILES
+# ============================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+
+# ============================================================
+# 14. DEPLOYMENT & HOSTING ARTIFACTS
+# ============================================================
+
+.deploy/
+.deployment/
+release/
+releases/
+
+*.tar
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# Server-specific files
+.htpasswd
+.htaccess.local
+nginx.local.conf
+apache.local.conf
+
+# Deployment credentials
+deploy.key
+deploy.pem
+id_rsa
+id_rsa.pub
+
+
+# ============================================================
+# 15. DOCKER LOCAL FILES
+# ============================================================
+
+docker-compose.override.yml
+docker-compose.local.yml
+
+.docker/
+docker-data/
+docker-volumes/
+
+mysql-data/
+postgres-data/
+redis-data/
+
+
+# ============================================================
+# 16. CLOUD & INFRASTRUCTURE LOCAL FILES
+# ============================================================
+
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+terraform.tfvars.json
+
+.aws/
+.azure/
+.gcloud/
+
+serverless/.serverless/
+.serverless/
+
+
+# ============================================================
+# 17. SSL CERTIFICATES & SECURITY FILES
+# ============================================================
+
+/certs/
+/ssl/
+/security/private/
+/keys/
+
+*.csr
+*.jks
+*.keystore
+
+
+# ============================================================
+# 18. MEDIA DESIGN SOURCE FILES
+# ============================================================
+
+# Large editable design files should not be committed unless intentionally needed.
+*.psd
+*.ai
+*.xd
+*.fig
+*.sketch
+*.afdesign
+*.afphoto
+
+# Exported brand assets can be committed when optimized and intentionally used.
+# Keep final SVG, PNG, JPG, WEBP logo/assets inside public/assets or resources/assets.
+
+
+# ============================================================
+# 19. GENERATED DOCUMENTS & REPORTS
+# ============================================================
+
+/reports/generated/
+/exports/generated/
+/invoices/generated/
+/documents/generated/
+
+*.pdf
+*.docx
+*.xlsx
+*.csv
+
+# Keep intentional public documents by force-adding them manually:
+# git add -f path/to/file.pdf
+
+
+# ============================================================
+# 20. EMAIL, QUEUE & LOCAL WORKER FILES
+# ============================================================
+
+/storage/mail/
+/storage/queue/
+/storage/failed-jobs/
+
+supervisord.log
+supervisord.pid
+
+
+# ============================================================
+# 21. LOCAL DEVELOPMENT SERVER FILES
+# ============================================================
+
+.localhost/
+.local-server/
+dev-server.log
+vite-dev.log
+
+
+# ============================================================
+# 22. CMS / ADMIN GENERATED CONTENT
+# ============================================================
+
+/public/admin/cache/
+/public/admin/uploads/
+/storage/cms/
+/storage/admin/
+
+
+# ============================================================
+# 23. AI / TEMPORARY GENERATED WORK FILES
+# ============================================================
+
+.ai-output/
+.ai-cache/
+.chatgpt/
+.generated/
+drafts/
+scratch/
+notes.local.md
+
+
+# ============================================================
+# 24. GIT & PATCH TEMPORARY FILES
+# ============================================================
+
+*.orig
+*.rej
+*.patch
+*.diff
+
+
+# ============================================================
+# 25. KEEP EMPTY DIRECTORY PLACEHOLDERS
+# ============================================================
+
+!.gitignore
+!**/.gitignore
